@@ -1,6 +1,5 @@
 package com.opencart.qa.pages;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -12,6 +11,9 @@ public class HomePage extends TestBase {
 	
 	
 	//Page Factory - OR:
+	
+	@FindBy(xpath= "//img[@title='naveenopencart']")
+	WebElement company_logo;
 	
 	@FindBy(linkText= "My Account")
 	WebElement myaccount_link;
@@ -42,11 +44,21 @@ public class HomePage extends TestBase {
 		return driver.getTitle();
 	}
 	
-	public void ValidateSearchField()
+	public SearchPage ValidateSearchField()
 	{
 		
 		searchfield.sendKeys(prop.getProperty("SearchText"));
 		search_btn.click();
+		return  new SearchPage();
+		
+	}
+	
+	public Boolean ValidateCompanyLogo()
+	{
+		
+		Boolean text = company_logo.isDisplayed();
+		return text;
+		
 		
 	}
 	
