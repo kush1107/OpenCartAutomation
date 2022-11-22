@@ -1,7 +1,6 @@
 package com.opencart.qa.util;
 
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 
 import com.opencart.qa.base.TestBase;
@@ -17,25 +16,22 @@ public class TestUtil extends TestBase{
 	}
 	
 	
-	public void SwitchToFrame()
+	public void SwitchToFrame()  //Switch Frame method
 	{
 		driver.switchTo().frame("mainframe");
 	}
 	
 	
-	public  void ScrollToElementVisible(WebElement element)
+	public  void ScrollToBottom() throws InterruptedException   //Scroll to bottom method
 	{
 		
-
-		// Create instance of Javascript executor
 
 		JavascriptExecutor je = (JavascriptExecutor) driver;
 
 		// now execute query which actually will scroll until that element is not appeared on page.
 
-		je.executeScript("arguments[0].scrollIntoView(true);",element);
-
-		// Extract the text and verify
+		je.executeScript("window.scrollTo(0, document.body.scrollHeight)");
+		Thread.sleep(1000);
 
 		
 	}

@@ -17,7 +17,7 @@ public class HomePageTest extends TestBase {
 	HomePage homepage;
 	JavascriptExecutor js;
 	
-	String SearchText2 = prop.getProperty("SearchText");
+	
 	
 	public HomePageTest()	
 	{
@@ -54,28 +54,38 @@ public class HomePageTest extends TestBase {
 	@Test(priority=3,dependsOnMethods = { "VerifyPageTitle" })
 	public void VerifySearchFunctionality() throws InterruptedException
 	{
+		String SearchText2 = prop.getProperty("SearchText");
 		homepage.ValidateSearchField();
 		
 	 //Hardcoded value
-	
-	
-		Thread.sleep(1000);
-		if(SearchText2.equals("iphone")) //For Valid search keyword - hardcoded need to change
+		if(SearchText2.equals("iphone"))
 		{
+Boolean productblock = driver.findElement(By.xpath("//div[@class='product-layout product-grid col-lg-3 col-md-3 col-sm-6 col-xs-12']")).isDisplayed();
 			
-			WebElement	productblock = driver.findElement(By.xpath("//div[@class='product-layout product-grid col-lg-3 col-md-3 col-sm-6 col-xs-12']"));
-			Boolean text1 =  productblock.isDisplayed();
-			Assert.assertTrue(text1);
+			Assert.assertTrue(productblock);
 			System.out.println(" product found");
 		}
-		else  //For InValid search keyword
+		
+		else
 		{
-			
-			WebElement	noproducttext = driver.findElement(By.xpath("//p[contains(text(),'There is no product that matches the search criter')]"));	
-			
-			Assert.assertEquals(noproducttext.getText(),"There is no product that matches the search criteria.");
+			System.out.println("No Product Found");
 		}
+	
+	}
 		
 		
+		
+	@Test(priority=4)
+	public void VerifyAccount_LoginRedirection()
+	{
+		homepage.ValidateMyAccount_Login();
+		Assert.assertEquals(driver.getTitle(),"Account Login");
+	}
+	
+	@Test(priority=5)
+	public void VerifyAccount_RegisterRedirection()
+	{
+		homepage.ValidateMyAccount_Register();
+		Assert.assertEquals(driver.getTitle(),"Register Account");
 	}
 }

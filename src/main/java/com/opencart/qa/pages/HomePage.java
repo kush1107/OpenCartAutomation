@@ -18,6 +18,12 @@ public class HomePage extends TestBase {
 	@FindBy(linkText= "My Account")
 	WebElement myaccount_link;
 	
+	@FindBy(linkText= "Login")
+	WebElement myaccount_login;
+	
+	@FindBy(linkText= "Register")
+	WebElement myaccount_register;
+	
 	@FindBy(linkText= "Wish List (0)")
 	WebElement wishlist_link;
 	
@@ -59,6 +65,22 @@ public class HomePage extends TestBase {
 		Boolean text = company_logo.isDisplayed();
 		return text;
 		
+		
+	}
+	
+	public LoginPage ValidateMyAccount_Login()
+	{
+		myaccount_link.click();
+		myaccount_login.click();
+		return  new LoginPage();
+		
+	}
+	
+	public RegisterPage ValidateMyAccount_Register()
+	{
+		myaccount_register.click();
+		 myaccount_register.click();
+		return  new RegisterPage();
 		
 	}
 	
