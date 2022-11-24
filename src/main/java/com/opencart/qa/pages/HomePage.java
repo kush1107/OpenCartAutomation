@@ -78,7 +78,7 @@ public class HomePage extends TestBase {
 	
 	public RegisterPage ValidateMyAccount_Register()
 	{
-		myaccount_register.click();
+		myaccount_link.click();
 		 myaccount_register.click();
 		return  new RegisterPage();
 		

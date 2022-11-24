@@ -27,14 +27,14 @@ public class HomePageTest extends TestBase {
 		super();
 	}
 	
-	@BeforeTest
+	@BeforeMethod
 	public void setup()
 	{
 		initialization();
 		 homepage = new HomePage();
 	}
 	
-	@AfterTest
+	@AfterMethod
 	public void teardown()
 	{
 		driver.quit();
@@ -60,22 +60,12 @@ public class HomePageTest extends TestBase {
 	public void VerifySearchFunctionality() throws InterruptedException
 	{
 		driver.navigate().to(prop.getProperty("navigate_url"));
-		String SearchText2 = prop.getProperty("SearchText");
+		
 		homepage.ValidateSearchField();
+		String title = driver.getTitle();
+		System.out.println(title);
 		
-	 //Hardcoded value
-		if(SearchText2.equals("iphone"))
-		{
-Boolean productblock = driver.findElement(By.xpath("//div[@class='product-layout product-grid col-lg-3 col-md-3 col-sm-6 col-xs-12']")).isDisplayed();
-			
-			Assert.assertTrue(productblock);
-			System.out.println(" product found");
-		}
-		
-		else
-		{
-			System.out.println("No Product Found");
-		}
+	
 	
 	}
 		
@@ -86,7 +76,7 @@ Boolean productblock = driver.findElement(By.xpath("//div[@class='product-layout
 	{
 		driver.navigate().to(prop.getProperty("navigate_url"));
 		homepage.ValidateMyAccount_Login();
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		Assert.assertEquals(driver.getTitle(),"Account Login");
 	}
 	
@@ -95,7 +85,7 @@ Boolean productblock = driver.findElement(By.xpath("//div[@class='product-layout
 	{
 		driver.navigate().to(prop.getProperty("navigate_url"));
 		homepage.ValidateMyAccount_Register();
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		Assert.assertEquals(driver.getTitle(),"Register Account");
 	}
 }
