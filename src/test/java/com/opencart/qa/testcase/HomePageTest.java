@@ -64,7 +64,7 @@ public class HomePageTest extends TestBase {
 	@Test(priority=1)
 	public void VerifyPageTitle()
 	{
-		driver.navigate().to(prop.getProperty("navigate_url"));
+		//driver.navigate().to(prop.getProperty("navigate_url"));
 		String text = homepage.ValidateHomePageTitle();
 		Assert.assertEquals(text,"Your Store");
 	}
@@ -72,14 +72,14 @@ public class HomePageTest extends TestBase {
 	@Test(priority=2)
 	public void VerifyCompanyLogo()
 	{
-		driver.navigate().to(prop.getProperty("navigate_url"));
+		//driver.navigate().to(prop.getProperty("navigate_url"));
 		Assert.assertTrue(homepage.ValidateCompanyLogo());;
 	}
 	
 	@Test(priority=3,dependsOnMethods = { "VerifyPageTitle" })
 	public void VerifySearchFunctionality() throws InterruptedException
 	{
-		driver.navigate().to(prop.getProperty("navigate_url"));
+		//driver.navigate().to(prop.getProperty("navigate_url"));
 		
 		homepage.ValidateSearchField();
 		String title = driver.getTitle();
@@ -94,7 +94,7 @@ public class HomePageTest extends TestBase {
 	@Test(priority=4)
 	public void VerifyAccount_LoginRedirection() throws InterruptedException
 	{
-		driver.navigate().to(prop.getProperty("navigate_url"));
+		//driver.navigate().to(prop.getProperty("navigate_url"));
 		homepage.ValidateMyAccount_Login();
 		Thread.sleep(1000);
 		Assert.assertEquals(driver.getTitle(),"Account Login");
@@ -103,7 +103,7 @@ public class HomePageTest extends TestBase {
 	@Test(priority=5)
 	public void VerifyAccount_RegisterRedirection() throws InterruptedException
 	{
-		driver.navigate().to(prop.getProperty("navigate_url"));
+		//driver.navigate().to(prop.getProperty("navigate_url"));
 		homepage.ValidateMyAccount_Register();
 		Thread.sleep(1000);
 		Assert.assertEquals(driver.getTitle(),"Register Account");

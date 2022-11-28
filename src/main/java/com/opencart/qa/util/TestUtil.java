@@ -48,7 +48,7 @@ public class TestUtil extends TestBase{
 		
 	}
 	
-	public static String TESTDATA_SHEET_PATH = "D:\\ECommerceFramework\\OpenCartAutomation\\src\\main\\java\\com\\opencart\\testdata\\TestData.xlsx";
+	public static String TESTDATA_SHEET_PATH = "D:\\ECommerceFrameword\\OpenCartAutomation\\src\\main\\java\\com\\opencart\\testdata\\TestData.xlsx";
 
 	static Workbook book;
 	static Sheet sheet;
