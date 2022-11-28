@@ -1,303 +1,264 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="13" passed="13" failed="0" skipped="0">
+<testng-results ignored="0" total="11" passed="9" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-11-24T12:51:22 IST" name="Suite" finished-at="2022-11-24T12:52:23 IST" duration-ms="61131">
+  <suite started-at="2022-11-29T00:06:21 IST" name="Suite" finished-at="2022-11-29T00:07:04 IST" duration-ms="42930">
     <groups>
     </groups>
-    <test started-at="2022-11-24T12:51:22 IST" name="Test" finished-at="2022-11-24T12:52:23 IST" duration-ms="61131">
+    <test started-at="2022-11-29T00:06:21 IST" name="Test" finished-at="2022-11-29T00:07:04 IST" duration-ms="42930">
       <class name="com.opencart.qa.testcase.HomePageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.opencart.qa.testcase.HomePageTest@449a4f23]" started-at="2022-11-24T12:51:36 IST" name="setup" finished-at="2022-11-24T12:51:38 IST" duration-ms="2292" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.opencart.qa.testcase.HomePageTest@53045c6c]" started-at="2022-11-29T00:06:35 IST" name="setup" finished-at="2022-11-29T00:06:38 IST" duration-ms="2587" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="VerifyPageTitle()[pri:1, instance:com.opencart.qa.testcase.HomePageTest@449a4f23]" started-at="2022-11-24T12:51:38 IST" name="VerifyPageTitle" finished-at="2022-11-24T12:51:39 IST" duration-ms="365" status="PASS">
+        <test-method signature="VerifyPageTitle()[pri:1, instance:com.opencart.qa.testcase.HomePageTest@53045c6c]" started-at="2022-11-29T00:06:38 IST" name="VerifyPageTitle" finished-at="2022-11-29T00:06:38 IST" duration-ms="286" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyPageTitle -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.opencart.qa.testcase.HomePageTest@449a4f23]" started-at="2022-11-24T12:51:39 IST" name="teardown" finished-at="2022-11-24T12:51:39 IST" duration-ms="197" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.opencart.qa.testcase.HomePageTest@53045c6c]" started-at="2022-11-29T00:06:38 IST" name="tearDown" finished-at="2022-11-29T00:06:39 IST" duration-ms="770" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=VerifyPageTitle status=SUCCESS method=HomePageTest.VerifyPageTitle()[pri:1, instance:com.opencart.qa.testcase.HomePageTest@53045c6c] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.opencart.qa.testcase.HomePageTest@449a4f23]" started-at="2022-11-24T12:51:39 IST" name="setup" finished-at="2022-11-24T12:51:41 IST" duration-ms="2276" status="PASS">
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.opencart.qa.testcase.HomePageTest@53045c6c]" started-at="2022-11-29T00:06:39 IST" name="setup" finished-at="2022-11-29T00:06:41 IST" duration-ms="2369" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="VerifyCompanyLogo()[pri:2, instance:com.opencart.qa.testcase.HomePageTest@449a4f23]" started-at="2022-11-24T12:51:41 IST" name="VerifyCompanyLogo" finished-at="2022-11-24T12:51:42 IST" duration-ms="369" status="PASS">
+        <test-method signature="VerifyCompanyLogo()[pri:2, instance:com.opencart.qa.testcase.HomePageTest@53045c6c]" started-at="2022-11-29T00:06:41 IST" name="VerifyCompanyLogo" finished-at="2022-11-29T00:06:42 IST" duration-ms="349" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyCompanyLogo -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.opencart.qa.testcase.HomePageTest@449a4f23]" started-at="2022-11-24T12:51:42 IST" name="teardown" finished-at="2022-11-24T12:51:42 IST" duration-ms="197" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.opencart.qa.testcase.HomePageTest@53045c6c]" started-at="2022-11-29T00:06:42 IST" name="tearDown" finished-at="2022-11-29T00:06:42 IST" duration-ms="725" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=VerifyCompanyLogo status=SUCCESS method=HomePageTest.VerifyCompanyLogo()[pri:2, instance:com.opencart.qa.testcase.HomePageTest@53045c6c] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.opencart.qa.testcase.HomePageTest@449a4f23]" started-at="2022-11-24T12:51:42 IST" name="setup" finished-at="2022-11-24T12:51:45 IST" duration-ms="2767" status="PASS">
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.opencart.qa.testcase.HomePageTest@53045c6c]" started-at="2022-11-29T00:06:42 IST" name="setup" finished-at="2022-11-29T00:06:45 IST" duration-ms="2429" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="VerifySearchFunctionality()[pri:3, instance:com.opencart.qa.testcase.HomePageTest@449a4f23]" started-at="2022-11-24T12:51:45 IST" name="VerifySearchFunctionality" finished-at="2022-11-24T12:51:46 IST" depends-on-methods="com.opencart.qa.testcase.HomePageTest.VerifyPageTitle" duration-ms="911" status="PASS">
+        <test-method signature="VerifySearchFunctionality()[pri:3, instance:com.opencart.qa.testcase.HomePageTest@53045c6c]" started-at="2022-11-29T00:06:45 IST" name="VerifySearchFunctionality" finished-at="2022-11-29T00:06:46 IST" depends-on-methods="com.opencart.qa.testcase.HomePageTest.VerifyPageTitle" duration-ms="672" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifySearchFunctionality -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.opencart.qa.testcase.HomePageTest@449a4f23]" started-at="2022-11-24T12:51:46 IST" name="teardown" finished-at="2022-11-24T12:51:46 IST" duration-ms="226" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.opencart.qa.testcase.HomePageTest@53045c6c]" started-at="2022-11-29T00:06:46 IST" name="tearDown" finished-at="2022-11-29T00:06:46 IST" duration-ms="695" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=VerifySearchFunctionality status=SUCCESS method=HomePageTest.VerifySearchFunctionality()[pri:3, instance:com.opencart.qa.testcase.HomePageTest@53045c6c] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.opencart.qa.testcase.HomePageTest@449a4f23]" started-at="2022-11-24T12:51:46 IST" name="setup" finished-at="2022-11-24T12:51:48 IST" duration-ms="2589" status="PASS">
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.opencart.qa.testcase.HomePageTest@53045c6c]" started-at="2022-11-29T00:06:46 IST" name="setup" finished-at="2022-11-29T00:06:49 IST" duration-ms="2932" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="VerifyAccount_LoginRedirection()[pri:4, instance:com.opencart.qa.testcase.HomePageTest@449a4f23]" started-at="2022-11-24T12:51:48 IST" name="VerifyAccount_LoginRedirection" finished-at="2022-11-24T12:51:50 IST" duration-ms="1816" status="PASS">
+        <test-method signature="VerifyAccount_LoginRedirection()[pri:4, instance:com.opencart.qa.testcase.HomePageTest@53045c6c]" started-at="2022-11-29T00:06:49 IST" name="VerifyAccount_LoginRedirection" finished-at="2022-11-29T00:06:51 IST" duration-ms="1791" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyAccount_LoginRedirection -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.opencart.qa.testcase.HomePageTest@449a4f23]" started-at="2022-11-24T12:51:50 IST" name="teardown" finished-at="2022-11-24T12:51:50 IST" duration-ms="177" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.opencart.qa.testcase.HomePageTest@53045c6c]" started-at="2022-11-29T00:06:51 IST" name="tearDown" finished-at="2022-11-29T00:06:52 IST" duration-ms="631" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=VerifyAccount_LoginRedirection status=SUCCESS method=HomePageTest.VerifyAccount_LoginRedirection()[pri:4, instance:com.opencart.qa.testcase.HomePageTest@53045c6c] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.opencart.qa.testcase.HomePageTest@449a4f23]" started-at="2022-11-24T12:51:50 IST" name="setup" finished-at="2022-11-24T12:51:53 IST" duration-ms="2261" status="PASS">
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.opencart.qa.testcase.HomePageTest@53045c6c]" started-at="2022-11-29T00:06:52 IST" name="setup" finished-at="2022-11-29T00:06:54 IST" duration-ms="2506" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="VerifyAccount_RegisterRedirection()[pri:5, instance:com.opencart.qa.testcase.HomePageTest@449a4f23]" started-at="2022-11-24T12:51:53 IST" name="VerifyAccount_RegisterRedirection" finished-at="2022-11-24T12:51:55 IST" duration-ms="1960" status="PASS">
+        <test-method signature="VerifyAccount_RegisterRedirection()[pri:5, instance:com.opencart.qa.testcase.HomePageTest@53045c6c]" started-at="2022-11-29T00:06:54 IST" name="VerifyAccount_RegisterRedirection" finished-at="2022-11-29T00:06:56 IST" duration-ms="1972" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyAccount_RegisterRedirection -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.opencart.qa.testcase.HomePageTest@449a4f23]" started-at="2022-11-24T12:51:55 IST" name="teardown" finished-at="2022-11-24T12:51:55 IST" duration-ms="208" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.opencart.qa.testcase.HomePageTest@53045c6c]" started-at="2022-11-29T00:06:56 IST" name="tearDown" finished-at="2022-11-29T00:06:57 IST" duration-ms="615" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=VerifyAccount_RegisterRedirection status=SUCCESS method=HomePageTest.VerifyAccount_RegisterRedirection()[pri:5, instance:com.opencart.qa.testcase.HomePageTest@53045c6c] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- teardown -->
+        </test-method> <!-- tearDown -->
       </class> <!-- com.opencart.qa.testcase.HomePageTest -->
       <class name="com.opencart.qa.testcase.LoginPageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.opencart.qa.testcase.LoginPageTest@6fdbe764]" started-at="2022-11-24T12:51:22 IST" name="setup" finished-at="2022-11-24T12:51:27 IST" duration-ms="5205" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.opencart.qa.testcase.LoginPageTest@750e2b97]" started-at="2022-11-29T00:06:21 IST" name="setup" finished-at="2022-11-29T00:06:25 IST" duration-ms="4116" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="VerifyForgottenpasswordLinkPresent()[pri:1, instance:com.opencart.qa.testcase.LoginPageTest@6fdbe764]" started-at="2022-11-24T12:51:27 IST" name="VerifyForgottenpasswordLinkPresent" finished-at="2022-11-24T12:51:29 IST" duration-ms="2538" status="PASS">
+        <test-method signature="VerifyForgottenpasswordLinkPresent()[pri:1, instance:com.opencart.qa.testcase.LoginPageTest@750e2b97]" started-at="2022-11-29T00:06:25 IST" name="VerifyForgottenpasswordLinkPresent" finished-at="2022-11-29T00:06:28 IST" duration-ms="2303" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyForgottenpasswordLinkPresent -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.opencart.qa.testcase.LoginPageTest@6fdbe764]" started-at="2022-11-24T12:51:29 IST" name="teardown" finished-at="2022-11-24T12:51:30 IST" duration-ms="217" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.opencart.qa.testcase.LoginPageTest@750e2b97]" started-at="2022-11-29T00:06:28 IST" name="teardown" finished-at="2022-11-29T00:06:28 IST" duration-ms="649" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.opencart.qa.testcase.LoginPageTest@6fdbe764]" started-at="2022-11-24T12:51:30 IST" name="setup" finished-at="2022-11-24T12:51:32 IST" duration-ms="2788" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.opencart.qa.testcase.LoginPageTest@750e2b97]" started-at="2022-11-29T00:06:28 IST" name="setup" finished-at="2022-11-29T00:06:31 IST" duration-ms="2574" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="VerifyLoginUser()[pri:2, instance:com.opencart.qa.testcase.LoginPageTest@6fdbe764]" started-at="2022-11-24T12:51:32 IST" name="VerifyLoginUser" finished-at="2022-11-24T12:51:36 IST" duration-ms="3495" status="PASS">
+        <test-method signature="VerifyLoginUser()[pri:2, instance:com.opencart.qa.testcase.LoginPageTest@750e2b97]" started-at="2022-11-29T00:06:31 IST" name="VerifyLoginUser" finished-at="2022-11-29T00:06:35 IST" duration-ms="3715" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyLoginUser -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.opencart.qa.testcase.LoginPageTest@6fdbe764]" started-at="2022-11-24T12:51:36 IST" name="teardown" finished-at="2022-11-24T12:51:36 IST" duration-ms="375" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.opencart.qa.testcase.LoginPageTest@750e2b97]" started-at="2022-11-29T00:06:35 IST" name="teardown" finished-at="2022-11-29T00:06:35 IST" duration-ms="646" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.opencart.qa.testcase.LoginPageTest -->
+      <class name="com.opencart.qa.testcase.RegisterPageTest">
+        <test-method signature="VerifyRegisterUser(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.opencart.qa.testcase.RegisterPageTest@5149d738]" started-at="2022-11-29T00:06:57 IST" name="VerifyRegisterUser" data-provider="getRegisterUserdata" finished-at="2022-11-29T00:06:57 IST" duration-ms="0" status="FAIL">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "java.io.InputStream.markSupported()" because "inp" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: java.lang.NullPointerException: Cannot invoke "java.io.InputStream.markSupported()" because "inp" is null
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:57)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:157)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:791)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:728)
+at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
+at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:917)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.NullPointerException: Cannot invoke "java.io.InputStream.markSupported()" because "inp" is null
+at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:65)
+at com.opencart.qa.util.TestUtil.getTestData(TestUtil.java:70)
+at com.opencart.qa.testcase.RegisterPageTest.getRegisterUserdata(RegisterPageTest.java:45)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:53)
+... 25 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyRegisterUser -->
+        <test-method signature="VerifyUserAlreadyRegister(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:com.opencart.qa.testcase.RegisterPageTest@5149d738]" started-at="2022-11-29T00:06:57 IST" name="VerifyUserAlreadyRegister" data-provider="getRegisterUserdata" finished-at="2022-11-29T00:06:57 IST" duration-ms="0" status="FAIL">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "java.io.InputStream.markSupported()" because "inp" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: java.lang.NullPointerException: Cannot invoke "java.io.InputStream.markSupported()" because "inp" is null
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:57)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:157)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:791)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:728)
+at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
+at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:917)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.NullPointerException: Cannot invoke "java.io.InputStream.markSupported()" because "inp" is null
+at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:65)
+at com.opencart.qa.util.TestUtil.getTestData(TestUtil.java:70)
+at com.opencart.qa.testcase.RegisterPageTest.getRegisterUserdata(RegisterPageTest.java:45)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:53)
+... 25 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyUserAlreadyRegister -->
+      </class> <!-- com.opencart.qa.testcase.RegisterPageTest -->
       <class name="com.opencart.qa.testcase.SearchPageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.opencart.qa.testcase.SearchPageTest@5b1669c0]" started-at="2022-11-24T12:52:16 IST" name="setup" finished-at="2022-11-24T12:52:18 IST" duration-ms="2218" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.opencart.qa.testcase.SearchPageTest@6bbe85a8]" started-at="2022-11-29T00:06:57 IST" name="setup" finished-at="2022-11-29T00:06:59 IST" duration-ms="2455" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="VerifyValidKeyword_search()[pri:1, instance:com.opencart.qa.testcase.SearchPageTest@5b1669c0]" started-at="2022-11-24T12:52:18 IST" name="VerifyValidKeyword_search" finished-at="2022-11-24T12:52:19 IST" duration-ms="623" status="PASS">
+        <test-method signature="VerifyValidKeyword_search()[pri:1, instance:com.opencart.qa.testcase.SearchPageTest@6bbe85a8]" started-at="2022-11-29T00:06:59 IST" name="VerifyValidKeyword_search" finished-at="2022-11-29T00:07:00 IST" duration-ms="561" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyValidKeyword_search -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.opencart.qa.testcase.SearchPageTest@5b1669c0]" started-at="2022-11-24T12:52:19 IST" name="teardown" finished-at="2022-11-24T12:52:19 IST" duration-ms="243" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.opencart.qa.testcase.SearchPageTest@6bbe85a8]" started-at="2022-11-29T00:07:00 IST" name="teardown" finished-at="2022-11-29T00:07:00 IST" duration-ms="621" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.opencart.qa.testcase.SearchPageTest@5b1669c0]" started-at="2022-11-24T12:52:19 IST" name="setup" finished-at="2022-11-24T12:52:22 IST" duration-ms="2440" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.opencart.qa.testcase.SearchPageTest@6bbe85a8]" started-at="2022-11-29T00:07:00 IST" name="setup" finished-at="2022-11-29T00:07:03 IST" duration-ms="2358" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="VerifyInValidKeyword_search()[pri:2, instance:com.opencart.qa.testcase.SearchPageTest@5b1669c0]" started-at="2022-11-24T12:52:22 IST" name="VerifyInValidKeyword_search" finished-at="2022-11-24T12:52:22 IST" duration-ms="623" status="PASS">
+        <test-method signature="VerifyInValidKeyword_search()[pri:2, instance:com.opencart.qa.testcase.SearchPageTest@6bbe85a8]" started-at="2022-11-29T00:07:03 IST" name="VerifyInValidKeyword_search" finished-at="2022-11-29T00:07:03 IST" duration-ms="765" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyInValidKeyword_search -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.opencart.qa.testcase.SearchPageTest@5b1669c0]" started-at="2022-11-24T12:52:22 IST" name="teardown" finished-at="2022-11-24T12:52:23 IST" duration-ms="242" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.opencart.qa.testcase.SearchPageTest@6bbe85a8]" started-at="2022-11-29T00:07:03 IST" name="teardown" finished-at="2022-11-29T00:07:04 IST" duration-ms="713" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.opencart.qa.testcase.SearchPageTest -->
-      <class name="com.opencart.qa.testcase.RegisterPageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.opencart.qa.testcase.RegisterPageTest@1530c739]" started-at="2022-11-24T12:51:55 IST" name="setup" finished-at="2022-11-24T12:51:58 IST" duration-ms="2357" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="VerifyRegisterUser(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.opencart.qa.testcase.RegisterPageTest@1530c739]" started-at="2022-11-24T12:51:58 IST" name="VerifyRegisterUser" data-provider="getRegisterUserdata" finished-at="2022-11-24T12:52:00 IST" duration-ms="2137" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Kushal]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Test1233]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[kushaltest11133@gmail.com]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[8.780921804E9]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[Kush@123]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[Kush@123]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyRegisterUser -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.opencart.qa.testcase.RegisterPageTest@1530c739]" started-at="2022-11-24T12:52:00 IST" name="teardown" finished-at="2022-11-24T12:52:00 IST" duration-ms="189" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.opencart.qa.testcase.RegisterPageTest@1530c739]" started-at="2022-11-24T12:52:00 IST" name="setup" finished-at="2022-11-24T12:52:02 IST" duration-ms="2377" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="VerifyRegisterUser(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.opencart.qa.testcase.RegisterPageTest@1530c739]" started-at="2022-11-24T12:52:02 IST" name="VerifyRegisterUser" data-provider="getRegisterUserdata" finished-at="2022-11-24T12:52:04 IST" duration-ms="2055" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Kushal]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Test12455]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[kushaltest22331@gmail.com]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[8.700921864E9]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[Kush@123]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[Kush@123]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyRegisterUser -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.opencart.qa.testcase.RegisterPageTest@1530c739]" started-at="2022-11-24T12:52:04 IST" name="teardown" finished-at="2022-11-24T12:52:05 IST" duration-ms="197" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.opencart.qa.testcase.RegisterPageTest@1530c739]" started-at="2022-11-24T12:52:05 IST" name="setup" finished-at="2022-11-24T12:52:09 IST" duration-ms="4303" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="VerifyUserAlreadyRegister(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:com.opencart.qa.testcase.RegisterPageTest@1530c739]" started-at="2022-11-24T12:52:09 IST" name="VerifyUserAlreadyRegister" data-provider="getRegisterUserdata" finished-at="2022-11-24T12:52:11 IST" duration-ms="2047" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Kushal]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Test1233]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[kushaltest11133@gmail.com]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[8.780921804E9]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[Kush@123]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[Kush@123]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyUserAlreadyRegister -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.opencart.qa.testcase.RegisterPageTest@1530c739]" started-at="2022-11-24T12:52:11 IST" name="teardown" finished-at="2022-11-24T12:52:11 IST" duration-ms="251" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.opencart.qa.testcase.RegisterPageTest@1530c739]" started-at="2022-11-24T12:52:11 IST" name="setup" finished-at="2022-11-24T12:52:14 IST" duration-ms="2907" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="VerifyUserAlreadyRegister(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:com.opencart.qa.testcase.RegisterPageTest@1530c739]" started-at="2022-11-24T12:52:14 IST" name="VerifyUserAlreadyRegister" data-provider="getRegisterUserdata" finished-at="2022-11-24T12:52:16 IST" duration-ms="1818" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Kushal]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Test12455]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[kushaltest22331@gmail.com]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[8.700921864E9]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[Kush@123]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[Kush@123]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyUserAlreadyRegister -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.opencart.qa.testcase.RegisterPageTest@1530c739]" started-at="2022-11-24T12:52:16 IST" name="teardown" finished-at="2022-11-24T12:52:16 IST" duration-ms="179" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- com.opencart.qa.testcase.RegisterPageTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

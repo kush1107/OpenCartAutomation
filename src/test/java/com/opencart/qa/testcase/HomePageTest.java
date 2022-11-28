@@ -1,14 +1,15 @@
 package com.opencart.qa.testcase;
 
-import org.openqa.selenium.By;
+import java.io.File;
+
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.testng.Assert;
+import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterSuite;
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import com.opencart.qa.base.TestBase;
@@ -34,10 +35,29 @@ public class HomePageTest extends TestBase {
 		 homepage = new HomePage();
 	}
 	
-	@AfterMethod
-	public void teardown()
+	@AfterMethod   //ITestResult method is added just to see screenshot taken in it. Learning purpose!!
+	public void tearDown(ITestResult result)
 	{
-		driver.quit();
+
+	
+	if(ITestResult.FAILURE==result.getStatus())
+	{
+	try 
+	{
+	
+	File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+	String currentDir = System.getProperty("user.dir");
+	FileUtils.copyFile(scrFile, new File(currentDir + "/screenshots/" + result.getName() + ".png"));
+	System.out.println("Screenshot taken");
+	
+	} 
+	catch (Exception e)
+	{
+	System.out.println("Exception while taking screenshot "+e.getMessage());
+	} 
+	}
+	
+	driver.quit();
 	}
 	
 	

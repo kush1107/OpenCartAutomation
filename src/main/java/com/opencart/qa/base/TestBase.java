@@ -9,19 +9,24 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.events.EventFiringWebDriver;
 
 import com.opencart.qa.util.TestUtil;
+import com.opencart.qa.util.WebEventListener;
 
+@SuppressWarnings("deprecation")
 public class TestBase  {
 	
 	public static WebDriver driver;
 	public static Properties prop;
+	public  static EventFiringWebDriver e_driver;
+	public static WebEventListener eventListener;
 	
 	public TestBase() {
 		
 		prop = new Properties();
 		try {
-			FileInputStream ip = new FileInputStream("D:\\ECommerceFramework\\OpenCartAutomation\\src\\main\\java\\com\\opencart\\qa\\config\\config.properties");
+			FileInputStream ip = new FileInputStream("D:\\ECommerceFrameword\\OpenCartAutomation\\src\\main\\java\\com\\opencart\\qa\\config\\config.properties");
 		prop.load(ip);
 		
 		} catch (FileNotFoundException e) {
@@ -55,6 +60,11 @@ public class TestBase  {
 			System.out.println("Browser is not available");
 		}
 		
+		e_driver = new EventFiringWebDriver(driver);
+		// Now create object of EventListerHandler to register it with EventFiringWebDriver
+		eventListener = new WebEventListener();
+		e_driver.register(eventListener);
+		driver = e_driver;
 		
 		
 		
