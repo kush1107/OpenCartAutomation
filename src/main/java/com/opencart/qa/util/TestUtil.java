@@ -10,6 +10,7 @@ import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -19,8 +20,8 @@ import com.opencart.qa.base.TestBase;
 
 public class TestUtil extends TestBase{
 
-	public static final long PAGE_LOAD_TIMEOUT = 20;
-	public static final long IMPLICIT_WAIT = 10;
+	public static final long PAGE_LOAD_TIMEOUT = 30;
+	public static final long IMPLICIT_WAIT = 30;
 	
 	public TestUtil()
 	{
@@ -33,6 +34,14 @@ public class TestUtil extends TestBase{
 		driver.switchTo().frame("mainframe");
 	}
 	
+	public void LoginUser() 
+	{
+		driver.findElement(By.linkText("My Account")).click();
+		driver.findElement(By.linkText("Login")).click();
+		driver.findElement(By.id("input-email")).sendKeys(prop.getProperty("username"));
+		driver.findElement(By.id("input-password")).sendKeys(prop.getProperty("password"));
+		driver.findElement(By.xpath("//input[@value='Login']")).click();
+	}
 	
 	public  void ScrollToBottom() throws InterruptedException   //Scroll to bottom method
 	{

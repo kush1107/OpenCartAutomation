@@ -26,7 +26,7 @@ public class TestBase  {
 		
 		prop = new Properties();
 		try {
-			FileInputStream ip = new FileInputStream("D:\\ECommerceFrameword\\OpenCartAutomation\\src\\main\\java\\com\\opencart\\qa\\config\\config.properties");
+			FileInputStream ip = new FileInputStream("D:\\ECommerceFramework\\OpenCartAutomation\\src\\main\\java\\com\\opencart\\qa\\config\\config.properties");
 		prop.load(ip);
 		
 		} catch (FileNotFoundException e) {
